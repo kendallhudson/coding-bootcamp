@@ -1,0 +1,35 @@
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    color: red;
+}.line-one {
+    font-family: 'Segoe UI';
+    font-size: small;
+    color: pink;
+}
+.line-two {
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    color: #049447;
+}
+.line-three {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: #560494;
+}
+.line-four {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: rgb(119, 148, 4);
+}
+.line-five {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.5in;
+    color: rgb(30, 0, 255);
+}
+.line-six {
+    font-family: cursive;
+    font-size: 5vh;
+    color: rgb(255, 191, 0);
+}
+
