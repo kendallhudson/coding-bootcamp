@@ -1,0 +1,100 @@
+.main-nav, .sub-nav {
+    display: flex;
+}
+
+.main-nav {
+    background-color: rgb(59, 59, 150);
+    justify-content: space-between;
+}
+
+.full-width {
+    display: none;
+}
+
+.short-width {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list a {
+    padding: 1rem;
+    border-right: .5px solid white;
+}
+
+.nav-list li:last-of-type a {
+    border-right: 0;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+.search-form {
+    background-color: rgba(255, 255, 0, 0.421);
+    display: flex;
+    /* width: 100%; */
+    flex-grow: 1;
+}
+
+input {
+    display: flex;
+    width: 60%;
+    /* flex-grow: 1; */
+    border-bottom: 1px solid rgb(59, 59, 150);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: .5rem;
+    margin: 1rem 0 1rem 1rem; 
+}
+
+button {
+    background-color: rgb(59, 59, 150);
+    border-bottom: 5px solid rgb(59, 59, 150);
+    color: white;
+    border: 0;
+    height: 32.5px;
+    width: 2rem;
+    margin-top: 1rem;
+}
+.company-name {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(59, 59, 150);
+    text-transform: uppercase;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    /* margin: 2rem; */
+}
+.credit-offer {
+    display: flex;
+    color: white;
+    background-color: red;
+    height: 32.5px;
+    padding: .5rem;
+    margin: 1rem;
+    text-decoration: none;
+
+}
+
+/* Media Queries */
+@media screen and (min-width: 769px) {
+    .full-width {
+        display: flex;
+    }
+    .short-width {
+        display: none;
+    }
+}
