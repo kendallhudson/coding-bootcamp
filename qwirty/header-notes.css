@@ -1,0 +1,164 @@
+/* THESE TWO SECTIONS KEEP THE BAR SIZED PROPERLY WHILE RESIZING SCREEN*/
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal.nav-list a{
+    /* display: block; */
+    padding: .25em .5em;
+    border-right: 1px solid #888;
+}
+
+/* REVISED CLASS NAMES */
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* ADD DISPLAY: FLEX HERE */
+.main-nav {
+    background-color: rgb(59, 59, 150);
+    justify-content: space-between;
+}
+
+/* ADD PADDING LEFT TO ALIGN SEARCH BAR */
+.search-form {
+    /* background-color: rgba(255, 255, 0, 0.421); */ /*used to visually see impact of changes made to search bar*/
+    display: flex;
+    /* width: 100%; */
+    flex: 1;
+    /* justify-content: flex-end; */
+    padding-left: 25px; /*this makes the search bar align with the first product card*/
+}
+
+/* MAYBE ADD PADDING */
+input {
+    display: flex;
+    flex: 1;
+    /* flex-grow: 1; */
+    border-bottom: 1px solid rgb(59, 59, 150);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: .5rem;
+    margin: 1rem 0 1rem 1rem; 
+}
+
+/* MAYBE ADD THIS CLASS */
+.search-form input {
+    padding: .25em .5em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(59, 59, 150);
+    flex: 1;
+}
+
+/* JAKE'S CODE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-nav {
+    background: #009933;
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav, .sub-nav {
+    font-family: 'Open Sans Condensed';
+    font-weight: 300;
+    display: flex;
+}
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.nav-list {
+    list-style: none;
+}
+.horizontal.nav-list a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 0.25em 0.5em;
+    border-right: 1px solid #888;
+}
+.horizontal.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.horizontal.nav-list li:last-of-type a {
+    border-right: none;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    /* -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale; */
+}
+.company-name {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 34px;
+    color: #009933;
+    min-width: calc(256px - 2rem);
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .search-form {
+    display: flex;
+    flex: 1;
+    padding-left: 2rem;
+  }
+.search-form input {
+    padding: 0.25em 0.5em;
+    flex: 1;
+    outline: none;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid #009933;
+}
+.search-form button {
+    background: #009933;
+    color: white;
+    padding: 0.25em 0.5em;
+    border: none;
+  }
+  .credit-offer {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 18px;
+    background: #993333;
+    padding: 0.25rem 0.5rem;
+    flex-shrink: 0;
+    margin: 0 1rem;
+  }
+@media (min-width: 768px) {
+  .horizontal.nav-list.full-width {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+.horizontal.nav-list.short-width {
+  display: none;
+}
+}
+@media (max-width: 767px) {
+    .horizontal.nav-list.full-width {
+      display: none;
+    }
+  }
